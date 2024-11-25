@@ -1,6 +1,12 @@
 void main(List<String> args) {
   //invocar a la funcion
   print(nombreMayusculas("ruth"));
+  String name = "Fernando";
+  String lastName = "Huachaca";
+  int age = 23;
+
+  argumnetosOpcionales(name, lastName);
+  argumnetosOpcionales(name, lastName, age);
 }
 
 String nombreMayusculas(String nombre) {
