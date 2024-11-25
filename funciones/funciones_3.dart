@@ -6,4 +6,6 @@ void main(List<String> args) {
   nombres.forEach((item) {
     print("${nombres.indexOf(item)}: $item");
   });
+  //Funcion tipo flecha o funcion lambda
+  nombres.forEach((item) => print("${nombres.indexOf(item)}: $item"));
 }
