@@ -4,9 +4,9 @@ void main(List<String> args) {
 
   var listaNumeros = [1, 2, 3];
 
-  /*print(listaNumeros.length);
+  print(listaNumeros.length);
   print(listaNumeros);
-  print(listaNumeros[1]);*/
+  print(listaNumeros[1]);
 
   List<int> listaNumeros1 = [2, 5, 6, 9, 7];
   print(listaNumeros1);
