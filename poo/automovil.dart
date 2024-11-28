@@ -2,7 +2,7 @@ class Automovil {
   String marca;
   String tipo;
   String modelo;
-  int numeroAsientos;
+  int numeroAsientos = 4;
   int maxVelocidad;
 
   Automovil({
@@ -22,6 +22,13 @@ void main(List<String> args) {
     numeroAsientos: 5,
     maxVelocidad: 120,
   );
+
+  Automovil auto2 = new Automovil(
+      marca: "Toyota",
+      tipo: "Camioneta",
+      modelo: "Hilux",
+      numeroAsientos: 5,
+      maxVelocidad: 180);
 
   print("Marca: ${auto1.marca}");
 }
