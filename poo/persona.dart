@@ -5,16 +5,29 @@ class Persona {
   int edad;
 
   //constructor
-  Persona({
-    required this.nombres,
-    required this.apellidos,
-    required this.edad,
-  });
+  Persona(
+    this.nombres,
+    this.apellidos,
+    this.edad,
+  );
+
+  //Metodos
+  caminar() {
+    print("Estoy caminando...");
+  }
+
+  String obtenerApellidos() {
+    return apellidos;
+  }
 }
 
 void main(List<String> args) {
-  Persona estudiante =
-      new Persona(nombres: "Ruth", apellidos: "Mas na", edad: 18);
+  Persona estudiante = Persona("Ruth", "Mas na", 18);
 
   print(estudiante.apellidos);
+  print(estudiante.caminar());
+
+  estudiante.apellidos = "Perez Rojas";
+  //print(estudiante.apellidos);
+  print(estudiante.obtenerApellidos());
 }
